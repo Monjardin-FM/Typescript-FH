@@ -6,6 +6,11 @@
         powers: ["Super Velocidad", "Viajar en el tiempo"],
     };
     flash = {
-        name2: "Otro nombre",
+        name: "Clark Kent",
+        age: 60,
+        powers: ["Super Fuerza"],
+        //   getNombre(){
+        //       return this.name
+        //   }
     };
 })();
