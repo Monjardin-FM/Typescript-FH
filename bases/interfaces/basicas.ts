@@ -1,22 +1,23 @@
 (() => {
-  let flash: {
+  interface Hero {
     name: string;
     age?: number;
     powers: string[];
     getName?: () => string;
-  } = {
+  }
+
+  let flash: Hero = {
     name: "Barry Allen",
     age: 24,
     powers: ["Super Velocidad", "Viajar en el tiempo"],
   };
 
-  flash = {
+  let superman: Hero = {
     name: "Clark Kent",
-    // age: 60,
-    powers: ["Super Fuerza"],
+    age: 60,
+    powers: ["Super Velocidad"],
     getName() {
       return this.name;
     },
   };
-  console.log(flash.getName);
 })();
